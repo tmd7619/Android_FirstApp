@@ -13,12 +13,9 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.MyFirstApp"
             tools:targetApi="31">
-        <meta-data
-                android:name="com.google.android.actions"
-                android:resource="@xml/activity_mission1.xml" />
 
         <activity
-                android:name=".MainActivity"
+                android:name=".LayoutCodeActivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
