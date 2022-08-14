@@ -28,7 +28,7 @@ public class ScrollViewActivity extends AppCompatActivity {
 
         // 리소스 이미지 참조
         Resources res = getResources();
-        bitmap = (BitmapDrawable) res.getDrawable(R.drawable.image01);
+        bitmap = (BitmapDrawable) res.getDrawable(R.drawable.image01);//
         int bitmapWidth = bitmap.getIntrinsicWidth();
         int bitmapHeight = bitmap.getIntrinsicHeight();
 
