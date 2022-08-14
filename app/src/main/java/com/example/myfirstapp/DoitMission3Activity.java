@@ -45,12 +45,17 @@ public class DoitMission3Activity extends AppCompatActivity {
         imageView01.setImageResource(0);
         imageView02.setImageResource(R.drawable.beach);
 
+        // 화면 갱신 메서드
+        imageView01.invalidate();
+        imageView02.invalidate();
     }
 
     private void moveImageUp() {
         imageView01.setImageResource(R.drawable.beach);
         imageView02.setImageResource(0);
 
+        imageView01.invalidate();
+        imageView02.invalidate();
     }
 
 }
