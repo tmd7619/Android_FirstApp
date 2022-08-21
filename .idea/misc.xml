@@ -11,10 +11,15 @@
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.38768115942028986" />
         <entry key="app/src/main/res/layout/activity_mission.xml" value="0.11141304347826086" />
         <entry key="app/src/main/res/layout/activity_mission3.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_samplewidget.xml" value="0.3958333333333333" />
         <entry key="app/src/main/res/layout/activity_scroll.xml" value="0.13134057971014493" />
         <entry key="app/src/main/res/layout/activty_mission3_2.xml" value="0.12280188666449654" />
+        <entry key="app/src/main/res/layout/activty_mission4.xml" value="0.21147528754340283" />
         <entry key="app/src/main/res/layout/baseline.xml" value="0.20885416666666667" />
+        <entry key="app/src/main/res/layout/button.xml" value="0.3958333333333333" />
+        <entry key="app/src/main/res/layout/edittext.xml" value="0.22106781005859377" />
         <entry key="app/src/main/res/layout/gravity.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/image.xml" value="0.19250253292806485" />
       </map>
     </option>
   </component>
