@@ -100,6 +100,8 @@ public class SampleEvent extends AppCompatActivity {
 
 
     }
+    // Toast 출력시간
+    // Toast.LENGTH_LONG -> 5초 , Toast.LENGTH_SHORT -> 2초
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
