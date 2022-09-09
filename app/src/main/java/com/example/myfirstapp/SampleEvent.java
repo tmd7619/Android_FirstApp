@@ -1,15 +1,20 @@
 package com.example.myfirstapp;
 
 import android.os.Bundle;
+import android.view.GestureDetector;
+import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SampleEvent extends AppCompatActivity {
 
     TextView textView;
+    GestureDetector detector; // 제스처 디텍터 객체 선언
+
 
     @Override
     protected void onCreate(Bundle saveInstanceState) {
@@ -42,6 +47,68 @@ public class SampleEvent extends AppCompatActivity {
             }
 
         });
+
+        // 제스처 코드 작성
+        detector = new GestureDetector(this, new GestureDetector.OnGestureListener() {
+            @Override
+            public boolean onDown(MotionEvent motionEvent) {
+                println("onDown() 호출됨");
+                return true;
+            }
+
+            @Override
+            public void onShowPress(MotionEvent motionEvent) {
+                println("onShowPress() 호출됨");
+            }
+
+            @Override
+            public boolean onSingleTapUp(MotionEvent motionEvent) {
+                println("onSingleTapUp 호출됨");
+
+                return true;
+            }
+
+            // 손가락으로 드래그 -> 이동한 거리 값이 중요하게 처리됨
+            @Override
+            public boolean onScroll(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
+                println("onScroll() 호출됨 " + v + ", " + v1);
+                return true;
+            }
+
+            @Override
+            public void onLongPress(MotionEvent motionEvent) {
+                println("onLongPress() 호출됨");
+
+            }
+
+            // 빠른 속도로 스크롤 하는 것 -> 이동한 속도값이 중요하게 처리 됨
+            @Override
+            public boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
+                println("onFling() 호출됨 " + v + ", " + v1);
+                return true;
+            }
+        });
+
+        View view2 = findViewById(R.id.view2);
+        view2.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                detector.onTouchEvent(motionEvent);
+                return true;
+            }
+        });
+
+
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            Toast.makeText(this, "시스템 [back] 버튼이 눌렸다", Toast.LENGTH_LONG).show();
+
+            return true;
+        } else
+            return false;
 
     }
 
