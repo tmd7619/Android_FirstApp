@@ -45,6 +45,7 @@ public class SampleOrientation extends AppCompatActivity {
 
     }
 
+    // 단말 방향을 바꾸어 액티비티가 소멸되었다가 다시 만들어질 때 이 메서드가 동작함
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
