@@ -12,6 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.snackbar.Snackbar;
 
 
+/**
+ * 스낵바는 클릭이벤트 가능, 토스트는 클릭이벤트 불가
+ */
+
 public class SampleOrientation2 extends AppCompatActivity {
 
     @Override

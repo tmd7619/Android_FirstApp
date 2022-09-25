@@ -8,6 +8,8 @@
         <entry key="app/src/main/res/drawable/finger_drawable.xml" value="0.2695" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.216" />
         <entry key="app/src/main/res/drawable/rect_drawable.xml" value="0.242" />
+        <entry key="app/src/main/res/layout-land/activity_land.xml" value="0.134375" />
+        <entry key="app/src/main/res/layout/activity_dialog.xml" value="0.2087438832158628" />
         <entry key="app/src/main/res/layout/activity_drawable.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_event.xml" value="0.19250253292806485" />
         <entry key="app/src/main/res/layout/activity_land.xml" value="0.19250253292806485" />
